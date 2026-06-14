@@ -1,0 +1,109 @@
+/* 
+font-family: "Poppins",sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F5F4F0;
+}
+.container{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 480px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 18px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content h4{
+    font-size: 15px;
+    color: #222;
+}
+.content p{
+    font-size: 13px;
+    color: #111;
+}
+
+/* toggle btn */
+.toggle-btn{
+    appearance: none;
+    width: 60px;
+    height: 28px;
+    background-color: #d1d5db;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+.toggle-btn::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width:18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.toggle-btn:checked{
+    background-color: blue;
+}
+.toggle-btn:checked::before{
+    transform: translate(32px);
+    -webkit-transform: translate(32px);
+    -moz-transform: translate(32px);
+    -ms-transform: translate(32px);
+    -o-transform: translate(32px);
+}
+
+.purple-toggle:checked{
+    background-color: blueviolet;
+}
+.green-toggle:checked{
+    background-color: #22c55e;
+}
+
+.orange-toggle:checked{
+    background-color: #f59e0b;
+}
+
+.red-toggle:checked{
+    background-color: #e11d48;
+}
